@@ -1,0 +1,139 @@
+:root {
+    font-family: 'Lato';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+}
+
+.header {
+    text-align: left;
+    padding: 98px 264px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+
+.highlight {
+    color: #009966;
+    font-weight: bold;
+}
+
+.content_container {
+    box-shadow: 0 -8px 0 0 #999999;
+    padding: 64px 232px;
+    background-color: #666666;
+    height: 450px;
+    width: 100%;
+}
+
+.content-header {
+    width: 398px;
+    background-color: #FFBF00;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: 0px 8px #CC9900;
+    position: relative;
+    z-index: 2;
+    margin-left: -10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.content-body {
+    width: 808px;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 1.6;
+    z-index: 1;
+    box-shadow: 0px 8px #999999;
+    background-color: #fff;
+    margin-top: -70px;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        text-align: left;
+        padding: 96px 24px;
+    }
+
+    .content_container {
+        box-shadow: 0 -8px  #999999;
+        box-shadow: 0 -8px 0 0 #999999;
+        background-color: #666666;
+        width: 100%;
+    }
+
+    .content-header {
+        width: 398px;
+        /* height: 60px; */
+        background-color: #FFBF00;
+        color: #000;
+        font-weight: bold;
+        font-size: 24px;
+        box-shadow: 0px 8px #CC9900;
+        position: relative;
+        z-index: 2;
+        margin-left: -20px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .content-body {
+        padding: 15px;
+        font-size: 20px;
+        line-height: 1.6;
+        z-index: 1;
+        box-shadow: 0px 8px #999999;
+        background-color: #fff;
+        margin-top: -70px;
+        width: 97%;
+    }
+}
+
+@media (max-width: 450px) {
+    .content-body {
+        padding: 15px;
+        font-size: 20px;
+        line-height: 1.6;
+        z-index: 1;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 8px #999999;
+        background-color: #fff;
+        margin-top: -90px;
+        width: 93%;
+    }
+
+    .content-header {
+        width: 70%;
+        /* height: 60px; */
+        background-color: #FFBF00;
+        color: #000;
+        font-weight: bold;
+        font-size: 24px;
+        box-shadow: 0px 8px #CC9900;
+        position: relative;
+        z-index: 2;
+        text-align: left;
+        padding:10px;
+        margin-left: 0px;
+    }
+}
+
