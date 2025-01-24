@@ -1,0 +1,158 @@
+:root {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fdfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+}
+
+.left-panel {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: left;
+  text-align: left;
+  font-family: "Brown";
+}
+
+.left-panel .logo {
+  width: 80px;
+}
+
+.left-panel h1 {
+  font-size: 40px;
+  color: #333;
+}
+
+.left-panel p {
+  font-size: 16px;
+  color: #737373;
+  line-height: 0.5cm;
+}
+
+.form-container {
+  flex: 1;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 50px 0px #0408131a;
+  border-radius: 6px;
+  margin: 100px 50px;
+  font-family: "Roboto", serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+form button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #2ec4b6;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.terms {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.terms a {
+  color: #00bfa6;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    padding: 24px;
+  }
+
+  .left-panel h1 {
+    font-size: 30px;
+  }
+
+  .left-panel .logo {
+    width: 40px;
+  }
+
+  .form-container {
+    padding: 20px;
+    margin: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/Brown-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/Brown-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
