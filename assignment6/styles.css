@@ -400,42 +400,41 @@ h1 span {
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
-}
+  > details {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 
-.faq-item {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-}
+    > summary {
+      cursor: pointer;
+      margin-block-end: 0.5rem;
+      font-size: 20px;
+      padding-block: 0.5rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-inline-end: 4rem;
 
-.faq-question {
-  width: 100%;
-  background: none;
-  border: none;
-  text-align: left;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  outline: none;
-}
+      &::after {
+        content: "+";
+        position: absolute;
+        right: 0.5rem;
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+      }
+    }
 
-.faq-question:hover {
-  color: #007bff;
-}
-
-.faq-answer {
-  font-size: 16px;
-  margin-top: 10px;
-  line-height: 1.6;
-  display: true;
-}
-
-.toggle-icon {
-  font-size: 24px;
+    &[open] {
+      > summary {
+        &::after {
+          content: "-";
+        }
+      }
+    }
+  }
 }
 
 .optimization-section {
