@@ -177,8 +177,8 @@ h2 span {
 
 .form .name-fields {
   display: flex;
-  margin-right: 10px;
-  gap: 20px;
+  justify-content: space-between;
+  margin-right: 0px;
 }
 
 .form-group {
@@ -192,26 +192,27 @@ h2 span {
   margin-bottom: 5px;
 }
 
-.form-group ::placeholder {
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
   display: block;
   color: #646e7a;
+  padding-left: 15px;
+  font-size: 12px;
 }
 
-.form-group input {
+input[type="text"],
+input[type="email"] {
   width: 100%;
   padding: 10px;
+  margin-top: 0.5rem;
   font-size: 14px;
-  border: 1px solid #edeff2;
+  border: none;
   background-color: #edeff2;
   border-radius: 4px;
 }
 
-.credit-card::after {
-  content: "MM / YY CVC";
-  font-size: 14px;
-  color: red;
-  display: block;
-  margin-top: 5px;
+.credit-card::placeholder ::after {
+  content: "MM / YY";
 }
 
 .cta-button {

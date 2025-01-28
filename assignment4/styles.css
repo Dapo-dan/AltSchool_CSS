@@ -42,7 +42,7 @@ body {
 .form-container {
   flex: 1;
   margin: 100px 50px;
-  font-family: "Roboto", serif;
+  font-family: "Sofia Pro", serif;
 }
 
 form {
@@ -65,6 +65,16 @@ form {
   font-size: 14px;
   font-weight: 300;
   text-align: left;
+  font-family: "Sofia Pro", serif;
+}
+
+input[type="date"] {
+  background: url("./calendar-alt.png") no-repeat right;
+  background-size: 20px 20px;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .form-row input,
@@ -165,6 +175,20 @@ form button {
 @font-face {
   font-family: "Brown";
   src: url("fonts/Brown-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("fonts/Sofia-Pro-Medium.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("fonts/Sofia-Pro-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }

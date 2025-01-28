@@ -22,7 +22,7 @@ header {
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007bff;
+  color: #0065fe;
 }
 
 nav ul {
@@ -38,11 +38,18 @@ nav a {
 }
 
 nav ul li:first-child a {
-  color: #007bff;
+  color: #0065fe;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #0065fe;
 }
 
 nav a:hover {
-  color: #007bff;
+  color: #0065fe;
 }
 
 .nav-action {
@@ -64,13 +71,13 @@ nav a:hover {
 
 .button.custom {
   background-color: white;
-  border: 1px solid #007bff;
-  color: #007bff;
+  border: 1px solid #0065fe;
+  color: #0065fe;
   width: 200px;
 }
 
 .button.select {
-  background-color: #007bff;
+  background-color: #0065fe;
   color: white;
   width: 200px;
 }
@@ -163,7 +170,7 @@ h1 span {
   margin-top: 8px;
 }
 
-.why-section {
+.feature-section {
   display: flex;
   background-color: #ffffff;
   padding: 100px 120px;
@@ -190,7 +197,7 @@ h1 span {
 }
 
 .intro .highlight {
-  color: #007bff;
+  color: #0065fe;
 }
 
 .intro p {
@@ -452,6 +459,13 @@ h1 span {
   text-align: center;
 }
 
+.optimization-section .button {
+  justify-content: center;
+  align-items: center;
+  margin-left: 35%;
+  margin-top: 20px;
+}
+
 .optimization-section .optimization1 {
   top: 1px;
   position: absolute;
@@ -537,7 +551,7 @@ h1 span {
 }
 
 .footer-column ul li a:hover {
-  color: #007bff;
+  color: #0065fe;
 }
 
 .footer-bottom {
