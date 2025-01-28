@@ -4,46 +4,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>URL Shortener</title>
+  <title>Scissor</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
-    <div class="logo">Scissor</div>
-    <nav>
+  <header class="navbar">
+    <img src="assets/Logo.png" alt="Logo">
+    <nav class="nav-links">
       <ul>
         <li><a href="#">My URLs</a></li>
-        <li><a href="#">Features</a></li>
+        <li><a href="#">Features<span class="dropdown-icon">&#9662;</span></a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Analytics</a></li>
         <li><a href="#">FAQs</a></li>
       </ul>
+
+    </nav>
+    <nav class="nav-actions">
+      <a href="#">Log in</a>
+      <button class="button">Try for free</button>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Optimize Your Online Experience</h1>
-    <p>Personalize your shortened URLs with our advanced URL shortening solution.</p>
-    <a href="#" class="btn">Sign Up</a>
+    <h1>Optimize Your Online Experience with Our Advanced <span>URL Shortening</span> Solution</h1>
+    <p>Personalize your shortened URLs to align with your brand identity. Utilize custom slugs,<br>branded links, and
+      domain customization options to reinforce your brand presence and<br>enhance user engagement.</p>
+    <button class="button">Sign Up</button>
+    <a href="#"> Learn more</a>
+    <img src="assets/linkCard.png" alt="Hero Footer Image">
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>URL Shortening</h3>
-      <p>Transform long URLs into concise, shareable links.</p>
+  <img src="assets/hero.png" alt="Hero Footer Image" class="hero-footer">
+
+  <section class="stats-section">
+    <div class="header">
+      <h1>One Stop.<br>Four <span>Possibilities</span>.</h1>
     </div>
-    <div class="feature">
-      <h3>Custom URLs</h3>
-      <p>Personalize your URLs to align with your brand.</p>
+    <div class="stats-container">
+      <div class="stat-item">
+        <h2>3M</h2>
+        <p>Active users</p>
+      </div>
+      <div class="stat-item">
+        <h2>60M</h2>
+        <p>Links & QR codes created</p>
+      </div>
+      <div class="stat-item">
+        <h2>1B</h2>
+        <p>Clicked & Scanned connections</p>
+      </div>
+      <div class="stat-item">
+        <h2>300k</h2>
+        <p>App Integrations</p>
+      </div>
     </div>
-    <div class="feature">
-      <h3>QR Codes</h3>
-      <p>Generate QR codes for easy sharing.</p>
+  </section>
+
+  <section class="why-section">
+    <div class="intro">
+      <h1>
+        Why choose <span class="highlight">Scissors</span>
+      </h1>
+      <p>
+        Scissors is the hub of everything that has to do with your link management. We shorten your URLs, allow you
+        creating custom ones for your personal, business, event usage. Our swift QR code creation, management and usage
+        tracking with advance analytics for all of these is second to none.
+      </p>
     </div>
-    <div class="feature">
-      <h3>Data Analytics</h3>
-      <p>Gain insights into your links' performance.</p>
+
+    <div class="features">
+      <div class="feature-item">
+        <img src="assets/shortening.png" alt="URL Shortening">
+        <h3>URL Shortening</h3>
+        <p>Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects.</p>
+      </div>
+      <div class="feature-item">
+        <img src="assets/custom.png" alt="Custom URLs">
+        <h3>Custom URLs</h3>
+        <p>With Scissor, you can create custom URLs, with the length you want! A solution for socials and businesses.
+        </p>
+      </div>
+      <div class="feature-item">
+        <img src="assets/qr.png" alt="QR Codes">
+        <h3>QR Codes</h3>
+        <p>Generate QR codes to your business, events. Bring your audience and customers to your doorstep with this scan
+          and go solution.</p>
+      </div>
+      <div class="feature-item">
+        <img src="assets/analytics.png" alt="Data Analytics">
+        <h3>Data Analytics</h3>
+        <p>Receive data on the usage of either your shortened URL, custom URLs or generated QR codes. Embedded to
+          monitor progress.</p>
+      </div>
     </div>
   </section>
 

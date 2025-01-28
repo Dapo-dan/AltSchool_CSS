@@ -6,47 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Assignments</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
+        /* Header Section */
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 20px 0;
             text-align: center;
+            padding: 40px 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #3e8e41;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Navigation Styles */
+        nav {
+            margin-top: 20px;
         }
 
         nav ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
-            margin: 20px 0 0;
-            text-align: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         nav ul li {
-            margin: 10px 0;
+            margin: 0;
         }
 
         nav ul li a {
             text-decoration: none;
             color: white;
-            font-size: 1.5em;
-            transition: color 0.3s;
+            font-size: 1.2rem;
             font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         nav ul li a:hover {
-            color: #ffeb3b;
+            background-color: #ffeb3b;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+                padding: 8px 15px;
+            }
         }
     </style>
 </head>
@@ -61,6 +98,7 @@
                 <li><a href="./assignment3/index.html">Assignment 3</a></li>
                 <li><a href="./assignment4/index.html">Assignment 4</a></li>
                 <li><a href="./assignment5/index.html">Assignment 5</a></li>
+                <li><a href="./assignment6/index.html">Assignment 6</a></li>
             </ul>
         </nav>
     </header>
